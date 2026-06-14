@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zojer Bowers - DevOps & Infrastructure Consultant</title>
+    <title>Zojer Bowers - DevOps & Infrastructure Engineer</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -18,38 +18,38 @@
             background: linear-gradient(135deg, #2d5016 0%, #4a6741 100%);
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         .header {
             text-align: center;
             padding: 60px 0;
             color: white;
             margin-bottom: 40px;
         }
-        
+
         .header h1 {
             font-size: 3.5em;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             animation: fadeInUp 1s ease-out;
         }
-        
+
         .header .tagline {
             font-size: 1.4em;
             opacity: 0.9;
             animation: fadeInUp 1s ease-out 0.3s both;
         }
-        
+
         .contact-info {
             margin-top: 20px;
             animation: fadeInUp 1s ease-out 0.6s both;
         }
-        
+
         .contact-info a {
             color: white;
             text-decoration: none;
@@ -57,11 +57,11 @@
             font-size: 1.1em;
             transition: opacity 0.3s ease;
         }
-        
+
         .contact-info a:hover {
             opacity: 0.7;
         }
-        
+
         .main-content {
             background: white;
             border-radius: 20px;
@@ -69,16 +69,16 @@
             overflow: hidden;
             animation: fadeInUp 1s ease-out 0.9s both;
         }
-        
+
         .section {
             padding: 50px;
             border-bottom: 1px solid #eee;
         }
-        
+
         .section:last-child {
             border-bottom: none;
         }
-        
+
         .section h2 {
             font-size: 2.2em;
             margin-bottom: 30px;
@@ -86,7 +86,7 @@
             position: relative;
             padding-bottom: 10px;
         }
-        
+
         .section h2::after {
             content: '';
             position: absolute;
@@ -97,21 +97,21 @@
             background: linear-gradient(45deg, #2d5016, #8b4513);
             border-radius: 2px;
         }
-        
+
         .intro {
             font-size: 1.2em;
             color: #555;
             margin-bottom: 30px;
             line-height: 1.8;
         }
-        
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 30px;
         }
-        
+
         .skill-category {
             background: #f4f6f0;
             padding: 25px;
@@ -119,24 +119,24 @@
             border-left: 5px solid #2d5016;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .skill-category:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
-        
+
         .skill-category h3 {
             color: #2d5016;
             margin-bottom: 15px;
             font-size: 1.3em;
         }
-        
+
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
         }
-        
+
         .skill-tag {
             background: linear-gradient(45deg, #2d5016, #8b4513);
             color: white;
@@ -145,13 +145,13 @@
             font-size: 0.9em;
             font-weight: 500;
         }
-        
+
         .achievements {
             display: grid;
             gap: 25px;
             margin-top: 30px;
         }
-        
+
         .achievement {
             background: #f4f6f0;
             padding: 25px;
@@ -159,17 +159,17 @@
             border-left: 5px solid #2d5016;
             transition: transform 0.3s ease;
         }
-        
+
         .achievement:hover {
             transform: translateX(10px);
         }
-        
+
         .achievement h3 {
             color: #2d5016;
             margin-bottom: 10px;
             font-size: 1.2em;
         }
-        
+
         .experience-item {
             margin-bottom: 40px;
             padding: 30px;
@@ -177,7 +177,7 @@
             border-radius: 15px;
             border-left: 5px solid #2d5016;
         }
-        
+
         .experience-header {
             display: flex;
             justify-content: space-between;
@@ -185,37 +185,37 @@
             margin-bottom: 20px;
             flex-wrap: wrap;
         }
-        
+
         .job-title {
             font-size: 1.4em;
             color: #2d5016;
             font-weight: bold;
         }
-        
+
         .company {
             font-size: 1.1em;
             color: #555;
             margin-top: 5px;
         }
-        
+
         .duration {
             color: #666;
             font-weight: 500;
             font-size: 1em;
         }
-        
+
         .responsibilities {
             list-style: none;
             margin-top: 15px;
         }
-        
+
         .responsibilities li {
             margin-bottom: 10px;
             padding-left: 20px;
             position: relative;
             color: #444;
         }
-        
+
         .responsibilities li::before {
             content: '▶';
             position: absolute;
@@ -224,14 +224,14 @@
             font-size: 0.8em;
             top: 2px;
         }
-        
+
         .certifications-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             margin-top: 30px;
         }
-        
+
         .cert-item {
             background: linear-gradient(45deg, #2d5016, #8b4513);
             color: white;
@@ -240,37 +240,37 @@
             text-align: center;
             transition: transform 0.3s ease;
         }
-        
+
         .cert-item:hover {
             transform: scale(1.05);
         }
-        
+
         .cert-item h3 {
             margin-bottom: 10px;
             font-size: 1.2em;
         }
-        
+
         .cert-year {
             opacity: 0.8;
             font-size: 1.1em;
         }
-        
+
         .cta-section {
             background: linear-gradient(45deg, #2d5016, #8b4513);
             color: white;
             text-align: center;
             padding: 50px;
         }
-        
+
         .cta-section h2 {
             color: white;
             margin-bottom: 20px;
         }
-        
+
         .cta-section h2::after {
             background: white;
         }
-        
+
         .cta-button {
             display: inline-block;
             background: white;
@@ -283,12 +283,12 @@
             margin-top: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
-        
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -299,20 +299,20 @@
                 transform: translateY(0);
             }
         }
-        
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2.5em;
             }
-            
+
             .section {
                 padding: 30px 25px;
             }
-            
+
             .experience-header {
                 flex-direction: column;
             }
-            
+
             .contact-info a {
                 display: block;
                 margin: 10px 0;
@@ -324,152 +324,174 @@
     <div class="container">
         <header class="header">
             <h1>Zojer Bowers</h1>
-            <div class="tagline">DevOps & Infrastructure Consultant</div>
+            <div class="tagline">DevOps & Infrastructure Engineer</div>
             <div class="contact-info">
-                <a href="mailto:zojer.bowers@gmail.com">📧 zojer.bowers@gmail.com</a>
-                <a href="https://tinyurl.com/zbowers" target="_blank">🌐 LinkedIn</a>
-                <a href="#contact">💼 Hire Me</a>
+                <a href="mailto:zojer.bowers@gmail.com">zojer.bowers@gmail.com</a>
+                <a href="https://tinyurl.com/zbowers" target="_blank">LinkedIn</a>
+                <a href="https://github.com/zbowers-dev" target="_blank">GitHub</a>
+                <a href="#contact">Hire Me</a>
             </div>
         </header>
-        
+
         <main class="main-content">
             <section class="section">
                 <h2>About Me</h2>
                 <div class="intro">
-                    Senior Systems Engineer with 15+ years of experience specializing in enterprise infrastructure, cloud migrations, and DevOps automation. I help organizations streamline their IT operations, migrate to cloud platforms, and implement robust security solutions across multiple environments.
+                    Senior Systems Engineer with 15+ years of experience specializing in enterprise infrastructure, cloud automation, and DevOps. I architect and ship IaC solutions across multi-account AWS environments, build reusable Terraform modules, and integrate security and observability tooling at scale.
                 </div>
                 <div class="intro">
-                    <strong>Currently available for remote consulting projects worldwide.</strong> Experienced in managing 5000+ devices, leading complex migrations, and implementing automation solutions that improve productivity and security posture.
+                    <strong>Currently available for remote consulting projects worldwide.</strong> From bootstrapping Terraform foundations across a dozen AWS accounts to delivering Python Lambda compliance pipelines, I focus on solutions that are maintainable, automated, and production-ready.
                 </div>
             </section>
-            
+
             <section class="section">
                 <h2>Core Expertise</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Cloud & DevOps</h3>
+                        <h3>Cloud & IaC</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">AWS (EC2, S3, RDS, IAM)</span>
-                            <span class="skill-tag">Azure (VM, EntraID)</span>
                             <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">AWS (EC2, IAM, KMS)</span>
+                            <span class="skill-tag">AWS (S3, DynamoDB, SSM)</span>
+                            <span class="skill-tag">AWS (Lambda, EventBridge)</span>
+                            <span class="skill-tag">AWS (Config, CloudWatch)</span>
+                            <span class="skill-tag">AWS Secrets Manager</span>
+                            <span class="skill-tag">Azure</span>
                             <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">GitHub</span>
                         </div>
                     </div>
-                    
+
+                    <div class="skill-category">
+                        <h3>Automation & Scripting</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PowerShell</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">AWS CLI</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Security & Observability</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Datadog (APM, CSPM)</span>
+                            <span class="skill-tag">SentinelOne EDR</span>
+                            <span class="skill-tag">Carbon Black</span>
+                            <span class="skill-tag">Vulnerability Management</span>
+                            <span class="skill-tag">BitLocker</span>
+                            <span class="skill-tag">Compliance</span>
+                        </div>
+                    </div>
+
                     <div class="skill-category">
                         <h3>Systems Management</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">MECM (SCCM)</span>
+                            <span class="skill-tag">MECM / SCCM</span>
                             <span class="skill-tag">MDT</span>
                             <span class="skill-tag">Group Policy</span>
                             <span class="skill-tag">JAMF</span>
                             <span class="skill-tag">PDQ Deploy</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <h3>Infrastructure</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Active Directory</span>
-                            <span class="skill-tag">DNS/DHCP</span>
+                            <span class="skill-tag">DNS / DHCP</span>
                             <span class="skill-tag">VMware ESXi</span>
                             <span class="skill-tag">Storage (NAS/SAN)</span>
                             <span class="skill-tag">Network Security</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-category">
-                        <h3>Automation & Scripting</h3>
+                        <h3>Developer Tooling</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">PowerShell</span>
-                            <span class="skill-tag">Bash</span>
-                            <span class="skill-tag">AWS CLI</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Process Automation</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Security</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Vulnerability Management</span>
-                            <span class="skill-tag">SentinelOne</span>
-                            <span class="skill-tag">Carbon Black</span>
-                            <span class="skill-tag">BitLocker Management</span>
-                            <span class="skill-tag">Compliance</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Platforms</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Windows Server 2012-2022</span>
-                            <span class="skill-tag">Windows 10-11</span>
-                            <span class="skill-tag">Ubuntu</span>
-                            <span class="skill-tag">Amazon Linux</span>
-                            <span class="skill-tag">macOS</span>
+                            <span class="skill-tag">GitHub Enterprise</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Perforce</span>
+                            <span class="skill-tag">Slack</span>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
             <section class="section">
                 <h2>Key Achievements</h2>
                 <div class="achievements">
                     <div class="achievement">
-                        <h3>🎮 Warner Bros. Games - Enterprise Infrastructure Leadership</h3>
-                        <p>Led Configuration Manager strategy across multiple studios, implementing automation and processes for 5000+ devices. Successfully upgraded infrastructure to latest versions (Server 2022, SQL Server 2022, MECM 2409).</p>
+                        <h3>Multi-Account Terraform Foundations</h3>
+                        <p>Bootstrapped Terraform IaC across 12+ AWS accounts — S3/DynamoDB remote state, KMS, and provider configuration — establishing a consistent multi-account, multi-region baseline. Authored 25+ PRs and 50+ commits owning module design, IAM, observability, and EC2 fleet automation.</p>
                     </div>
-                    
+
                     <div class="achievement">
-                        <h3>☁️ Major Cloud Migration Projects</h3>
-                        <p>Directed migration of physical on-premises infrastructure to AWS EC2, utilizing Terraform and AWS Systems Manager for automated deployments. Managed Route53, Workspaces, and IAM configurations.</p>
+                        <h3>Datadog Agent Self-Healing SSM Module</h3>
+                        <p>Built a reusable Terraform module that installs and self-heals the Datadog Agent on Linux and Windows EC2 instances via AWS SSM. Features tag-gated installs and Secrets Manager-sourced API keys, with no hardcoded credentials.</p>
                     </div>
-                    
+
                     <div class="achievement">
-                        <h3>🏢 Corporate Infrastructure Separation</h3>
-                        <p>Led massive infrastructure separation project for Lucky Brand (250+ stores), implementing new MECM, Office 365 migration, and Active Directory/Azure integration. Designed solutions based on best practices.</p>
+                        <h3>AWS Tag Compliance Pipeline</h3>
+                        <p>Delivered a scheduled Python Lambda that queries AWS Config for required-tag compliance and posts Slack summaries via EventBridge Scheduler — giving teams automated, zero-effort visibility into tagging drift across accounts.</p>
                     </div>
-                    
+
                     <div class="achievement">
-                        <h3>🔒 Enterprise Security Implementation</h3>
-                        <p>Deployed and managed enterprise security applications including Tenable Nessus, Carbon Black ThreatHunter, SentinelOne, and BitLocker Management across multiple studio locations.</p>
+                        <h3>GitHub Enterprise Self-Hosted Runner Modules</h3>
+                        <p>Authored Terraform modules for GitHub Enterprise self-hosted runners (Linux, Windows, GitHub Cloud) with multi-region support and a configurable Datadog agent toggle — enabling consistent CI/CD infrastructure as code.</p>
                     </div>
-                    
+
                     <div class="achievement">
-                        <h3>⚡ Process Automation & Optimization</h3>
-                        <p>Created dynamic automation for system deployments, standardized base images, and streamlined daily operations through PowerShell scripting and package deployment automation.</p>
+                        <h3>SentinelOne EDR Module</h3>
+                        <p>Built a reusable Terraform module for SentinelOne EDR deployment with tag-driven site-token selection and scheduled Linux/Windows SSM associations — enabling zero-touch EDR rollout across EC2 fleets.</p>
+                    </div>
+
+                    <div class="achievement">
+                        <h3>Datadog CSPM & Cloud Security Dashboards</h3>
+                        <p>Integrated Datadog CSPM and built centralized dashboards for cloud security posture visibility across AWS environments, providing a single-pane view for the security team.</p>
+                    </div>
+
+                    <div class="achievement">
+                        <h3>Warner Bros. Games — Enterprise Infrastructure Leadership</h3>
+                        <p>Led SCCM/MECM services globally across multiple studios for 5000+ devices. Upgraded infrastructure to Server 2022, SQL Server 2022, and MECM 2409, and drove vulnerability remediation across studio locations.</p>
+                    </div>
+
+                    <div class="achievement">
+                        <h3>Corporate Infrastructure Separation — Lucky Brand</h3>
+                        <p>Led infrastructure separation for Lucky Brand (250+ stores, 1400+ users) — implementing MECM, Office 365 migration, and Active Directory/Azure integration from the ground up.</p>
                     </div>
                 </div>
             </section>
-            
+
             <section class="section">
                 <h2>Professional Experience</h2>
-                
+
                 <div class="experience-item">
                     <div class="experience-header">
                         <div>
                             <div class="job-title">Sr. Systems Engineer</div>
-                            <div class="company">Warner Bros. Games - Burbank, CA</div>
+                            <div class="company">Warner Bros. Games — Burbank, CA</div>
                         </div>
                         <div class="duration">May 2019 – Present</div>
                     </div>
                     <ul class="responsibilities">
-                        <li>Manage 5000+ desktop and server devices across multiple operating systems and studio environments</li>
-                        <li>Lead ConfigMgr infrastructure upgrades and updates (Server 2022, SQL Server 2022, MECM 2409)</li>
-                        <li>Direct vulnerability remediation across multiple studio locations while managing team members</li>
-                        <li>Implement AWS infrastructure including EC2, Systems Manager, RDS, Workspaces, Route53 & IAM</li>
-                        <li>Utilize Terraform and AWS Systems Manager for automated software and configuration deployment</li>
-                        <li>Deploy enterprise security solutions: Tenable Nessus, Carbon Black, SentinelOne, FireEye HX</li>
+                        <li>Led global SCCM/MECM services management, planning, and engineering across multiple studios</li>
+                        <li>Bootstrapped Terraform IaC foundations across 12+ AWS accounts (S3/DynamoDB state, KMS, providers) for a multi-account, multi-region baseline</li>
+                        <li>Authored 25+ PRs and 50+ commits in a multi-account AWS Terraform repo, owning module design, IAM, observability, and EC2 fleet automation</li>
+                        <li>Built reusable Terraform modules: Datadog Agent self-healing SSM, SentinelOne EDR, and GitHub Enterprise self-hosted runners (Linux, Windows, GitHub Cloud)</li>
+                        <li>Delivered an AWS Tag Compliance pipeline — Python Lambda querying AWS Config and posting Slack summaries via EventBridge Scheduler</li>
+                        <li>Drove AWS resource tagging standardization aligned with AWS Config required-tag rules</li>
+                        <li>Integrated Datadog CSPM and built dashboards for centralized cloud security visibility</li>
+                        <li>Administered Windows and Linux servers; developed PowerShell automation to reduce manual workload</li>
+                        <li>Managed AWS and Azure cloud environments including EC2, IAM, SSM, Secrets Manager, and CloudWatch</li>
                     </ul>
                 </div>
-                
+
                 <div class="experience-item">
                     <div class="experience-header">
                         <div>
                             <div class="job-title">Sr. Desktop Administrator</div>
-                            <div class="company">Blizzard Entertainment - Burbank, CA</div>
+                            <div class="company">Blizzard Entertainment — Burbank, CA</div>
                         </div>
                         <div class="duration">Feb 2018 – April 2019</div>
                     </div>
@@ -480,12 +502,12 @@
                         <li>Integrated new intellectual properties and external studio crews</li>
                     </ul>
                 </div>
-                
+
                 <div class="experience-item">
                     <div class="experience-header">
                         <div>
                             <div class="job-title">Infrastructure Engineer</div>
-                            <div class="company">Lucky Brand - Los Angeles, CA</div>
+                            <div class="company">Lucky Brand — Los Angeles, CA</div>
                         </div>
                         <div class="duration">Feb 2009 – Oct 2014</div>
                     </div>
@@ -497,7 +519,7 @@
                     </ul>
                 </div>
             </section>
-            
+
             <section class="section">
                 <h2>Certifications</h2>
                 <div class="certifications-grid">
@@ -511,17 +533,16 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="section cta-section" id="contact">
                 <h2>Ready to Work Together?</h2>
-                <p>I'm available for remote consulting projects worldwide. Whether you need help with cloud migrations, infrastructure automation, or DevOps implementation, I can help your organization achieve its technology goals.</p>
+                <p>Available for remote consulting worldwide. Whether you need Terraform module development, AWS automation, DevOps pipeline work, or enterprise infrastructure engineering — let's talk.</p>
                 <a href="mailto:zojer.bowers@gmail.com?subject=Consulting Inquiry" class="cta-button">Get In Touch</a>
             </section>
         </main>
     </div>
-    
+
     <script>
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -530,13 +551,12 @@
                 });
             });
         });
-        
-        // Add animation on scroll
+
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -545,7 +565,7 @@
                 }
             });
         }, observerOptions);
-        
+
         document.querySelectorAll('.skill-category, .achievement, .experience-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
